@@ -8,6 +8,16 @@ const routes: Routes = [
     .then( (file) => file.HikesModule )
   },
   {
+    path: 'map',
+    loadChildren: () => import('./map/map.module')
+    .then( (file) => file.MapModule )
+  },
+  {
+    path: 'to-do-list',
+    loadChildren: () => import('./to-do-list/to-do-list.module')
+    .then( (file) => file.ToDoListModule )
+  },
+  {
     path: '**',
     loadChildren: () => import('./page-not-found/page-not-found.module')
     .then( (file) => file.PageNotFoundModule )
