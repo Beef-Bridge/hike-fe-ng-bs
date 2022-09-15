@@ -1,41 +1,131 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<header>
   <app-header></app-header>
-</nav>
+</header>
 
-<div class="container">
-  <div class="p-5 mb-4 bg-light rounded-3">
-    <div class="container-fluid py-5">
-      <h1 class="display-5 fw-bold">Mes randonnées</h1>
-      <p class="col-md-12 fs-4">
-        Découvrez ci-dessous les randonnées que j'ai faites seul, entre amis ou en famille. Je vous propose toutes les informations nécessaires pour faire vous aussi ces itinéraires.<br><br>
-        <small>Avant de débuter une randonnée, veuillez vous renseigner sur l'itinéraire, sa difficulté, la météo, etc. Ne faites pas un itinéraire sans vous être préparés.</small>
-      </p>
-      <button class="btn btn-primary btn-lg" type="button">C'est parti !</button>
-    </div>
-  </div>
+<div class="px-4 py-2 my-5 text-center">
+  <h1 class="display-4 fw-normal">Mes randonnées</h1>
 
-  <hr class="col-3 col-md-2 mb-5">
+  <div class="col-lg-6 mx-auto">
+    <p class="fs-5 text-muted">
+      Découvrez les randonnées que j'ai faites seul, entre amis ou en famille.
+      <!--Je vous propose toutes les informations nécessaires pour faire vous aussi
+      ces itinéraires.-->
+    </p>
 
-  <div class="row g-5">
-    <div class="col-md-8">
-      <h2>Mes dernières sorties</h2>
-
-      <ul class="icon-list ps-0">
-        <li class="d-flex align-items-start mb-1"><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
-        <li class="text-muted d-flex align-items-start mb-1">Bootstrap Parcel starter (coming soon!)</li>
-      </ul>
-    </div>
-
-    <div class="col-md-4">
-      <h2>Pour partir en randonnée</h2>
-      <p>
-        Emportez toujours votre itinéraire avec vous en partant en randonnée. Pour cela chargez le fichier GPX de chaque randonnée et utilisez mon application GPX viewer (pour iOS) pour l'afficher.<br>
-        <small><a href="https://apps.apple.com/ch/app/gpx-viewer/id1511582047?l=fr" target="_blank" class="appstorelink"><i class="fab fa-app-store-ios"></i> AppStore</a></small>
-      </p>
-    </div>
+    <!--<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+    </div>-->
   </div>
 </div>
 
-<footer class="py-5 bg-dark">
-  <app-footer></app-footer>
-</footer>
+<hr class="col-3 col-md-2 mx-auto" />
+
+<div class="row g-5">
+  <div id="latest-hikes" class="col-md-12">
+    <h2>Dernières sorties</h2>
+
+    <section>
+      <ul class="hikes-list">
+        <li class="sidenotes">Année 2022</li>
+        <li>
+          <span class="date">26 fev. 2022</span>
+          <a href="" class="badge badge-secondary category">Raquette</a> &nbsp;
+          <span class="d-inline-block mb-2 massif vercors">
+            <i class="fas fa-mountain"></i> Vercors
+          </span>
+          &nbsp;
+          <a lang="fr" href="">Sortie nocturne dans les Coulmes</a>
+        </li>
+        <li>
+          <span class="date">12 fev. 2022</span>
+          <a href="" class="badge badge-secondary category">Raquette</a> &nbsp;
+          <span class="d-inline-block mb-2 massif vercors">
+            <i class="fas fa-mountain"></i> Vercors
+          </span>
+          &nbsp;
+          <a lang="fr" href="">La cabane de Carette en suivant le GR91</a>
+        </li>
+        <li>
+          <span class="date">22 janv. 2022</span>
+          <a href="" class="badge badge-secondary category">Raquette</a> &nbsp;
+          <span class="d-inline-block mb-2 massif beaufortain">
+            <i class="fas fa-mountain"></i> Beaufortain
+          </span>
+          &nbsp;
+          <a lang="fr" href="">Roche Parstire depuis le Col du Pré</a>
+        </li>
+        <li>
+          <span class="date">15 janv. 2022</span>
+          <a href="" class="badge badge-secondary category">Raquette</a> &nbsp;
+          <span class="d-inline-block mb-2 massif chartreuse">
+            <i class="fas fa-mountain"></i> Chartreuse
+          </span>
+          &nbsp;
+          <a lang="fr" href=""
+            >Boucle Emeindras du dessus et Col de Emeindras</a
+          >
+        </li>
+        <li>
+          <span class="date">08 janv. 2022</span>
+          <a href="" class="badge badge-secondary category">Pédestre</a> &nbsp;
+          <span class="d-inline-block mb-2 massif chartreuse">
+            <i class="fas fa-mountain"></i> Chartreuse
+          </span>
+          &nbsp;
+          <a lang="fr" href="">L'Ecoutoux</a>
+        </li>
+        <li class="sidenotes">Année 2021</li>
+        <li>
+          <span class="date">26 déc. 2021</span>
+          <a href="" class="badge badge-secondary category">Raquette</a> &nbsp;
+          <span class="d-inline-block mb-2 massif chartreuse">
+            <i class="fas fa-mountain"></i> Chartreuse
+          </span>
+          &nbsp;
+          <a lang="fr" href=""
+            >Auberge du Charmant-Som depuis le Col de Porte</a
+          >
+        </li>
+        <li>
+          <span class="date">12 nov. 2021</span>
+          <a href="" class="badge badge-secondary category">Pédestre</a> &nbsp;
+          <span class="d-inline-block mb-2 massif chartreuse">
+            <i class="fas fa-mountain"></i> Chartreuse
+          </span>
+          &nbsp;
+          <a lang="fr" href="">Le Col de l'Aple et le sommet du Pinet</a>
+        </li>
+        <li>
+          <span class="date">31 oct. 2021</span>
+          <a href="" class="badge badge-secondary category">Pédestre</a> &nbsp;
+          <span class="d-inline-block mb-2 massif chartreuse">
+            <i class="fas fa-mountain"></i> Chartreuse
+          </span>
+          &nbsp;
+          <a lang="fr" href="">GRP Chartreuse Epernay</a>
+        </li>
+        <li>
+          <span class="date">26 sept. 2021</span>
+          <a href="" class="badge badge-secondary category">Pédestre</a> &nbsp;
+          <span class="d-inline-block mb-2 massif vercors">
+            <i class="fas fa-mountain"></i> Vercors
+          </span>
+          &nbsp;
+          <a lang="fr" href="">Le Moucherotte et le Sommet des Cimes</a>
+        </li>
+        <li>
+          <span class="date">13 sept. 2021</span>
+          <a href="" class="badge badge-secondary category">Pédestre</a> &nbsp;
+          <span class="d-inline-block mb-2 massif beaufortain">
+            <i class="fas fa-mountain"></i> Beaufortain
+          </span>
+          &nbsp;
+          <a lang="fr" href="">Le Rocher du Vent avec détour par le tunnel</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<app-footer></app-footer>
