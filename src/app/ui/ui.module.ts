@@ -6,7 +6,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { UiComponent } from './containers/ui/ui.component';
 import { RouterModule } from '@angular/router';
 
-
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -17,6 +17,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
+    FontAwesomeModule,
     RouterModule
   ],
   exports: [

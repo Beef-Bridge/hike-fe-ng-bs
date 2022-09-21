@@ -93,3 +93,54 @@
     color: #0dcaf0;
   }
 }
+
+#statistical-review {
+  .card {
+    margin-bottom: 24px;
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 500;
+
+      span {
+        color: #899bbd;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    .card-content {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+
+      .card-icon {
+        color: #899bbd;
+        font-size: 32px;
+        line-height: 0;
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        justify-content: center !important;
+        border-radius: 50% !important;
+        align-items: center !important;
+        display: flex !important;
+      }
+
+      .card-indicator {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-width: 64px;
+
+        h6 {
+          font-size: 28px;
+          font-weight: 700;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
